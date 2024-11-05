@@ -1,0 +1,26 @@
+@import url("../../App.css");
+
+.view-page {
+  width: 100%;
+  display: flex;
+}
+
+.single-blog-container {
+  margin: 20px auto;
+  background-color: var(--fourth-color);
+  width: 100%;
+  max-width: 800px;
+  min-height: 200px;
+}
+
+.single-blog-header {
+  text-align: center;
+  border-top: 5px solid var(--fifth-color);
+  border-bottom: 10px solid var(--fifth-color);
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

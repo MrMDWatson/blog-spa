@@ -1,0 +1,35 @@
+.write-page {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+
+.post-form-container {
+  margin: calc((100vh - 350px) * .15) auto auto auto;
+  background-color: aliceblue;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+
+.attention {
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+}
+
+#post-description {
+  resize: none;
+}
