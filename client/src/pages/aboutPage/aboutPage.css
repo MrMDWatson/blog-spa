@@ -2,6 +2,10 @@
   background-color: purple;
 }
 
+.about-header {
+  text-align: center;
+}
+
 .box {
   width: 10px;
   height: 10px;
