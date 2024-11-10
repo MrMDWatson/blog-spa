@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #ffff00;
-  --second-color: #1429a0;
-  --third-color: #7ad489;
-  --fourth-color: white;
+  --primary-color: #ffffff; /*#ffff00*/
+  --second-color: #ffffff; /*#1429a0*/
+  --third-color: #ffffff; /*#7ad489*/
+  --fourth-color: white;  
   --fifth-color: black;
 }
 
@@ -17,9 +17,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(20, 41, 160);
 }

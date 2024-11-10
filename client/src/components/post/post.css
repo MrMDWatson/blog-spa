@@ -1,6 +1,24 @@
+@import url("../../App.css");
+
 .post {
   aspect-ratio: 1/1;
   background-color: white;
   box-shadow: 0 10px 20px black;
+  border-radius: 10px;
   overflow: hidden;
+  padding: 10px;
+}
+
+.post-header {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.post-title {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--fifth-color);
+  font-weight: bold;
+  font-size: 1.2rem;
 }

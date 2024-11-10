@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import profilePic from "../../screenshot.jpg";
 import "./header.css";
 
 export default function Header() {
@@ -22,7 +23,13 @@ export default function Header() {
         </ul>
       </nav>
       <div className="right">
-        <div className="profile-pic-button"></div>
+        <Link to="/about">
+          <img
+            src={profilePic}
+            className="profile-pic-button"
+            alt="profile pic"
+          />
+        </Link>
       </div>
     </header>
   );

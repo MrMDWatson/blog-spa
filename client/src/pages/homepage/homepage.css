@@ -3,14 +3,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 10px 0;
-}
-
-.homepage-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
+  padding: 20px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .headliner {
@@ -19,12 +14,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .headliner-textbox {
   position: absolute;
-  top: 100px;
+  top: 120px;
   background-color: rgb(167, 98, 98);
   border-radius: 10px;
 }
@@ -36,6 +31,6 @@
 .headliner-image {
   width: 100%;
   box-shadow: 0 20px 30px black;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+  border-radius: 30px;
 }

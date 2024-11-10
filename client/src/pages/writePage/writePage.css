@@ -1,15 +1,12 @@
 .write-page {
+  margin: 0 auto;
   width: 100%;
-  min-height: calc(100vh - 100px);
-}
-
-.post-form-container {
-  margin: calc((100vh - 350px) * .15) auto auto auto;
-  background-color: aliceblue;
-  width: 80%;
   min-width: 300px;
-  max-width: 800px;
-  border-radius: 8px;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .post-form {
@@ -17,6 +14,9 @@
   flex-direction: column;
   width: 100%;
   padding-bottom: 25px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  box-shadow: 3px 3px 20px black;
 }
 
 

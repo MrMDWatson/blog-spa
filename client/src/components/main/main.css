@@ -1,8 +1,14 @@
 main {
   width: 100%;
-  min-height: -moz-min-content;
-  min-height: min-content;
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
+  min-height: calc(100vh - 110px);
+
+}
+
+.page-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  margin: 0;
 }
