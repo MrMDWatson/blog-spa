@@ -1,20 +1,21 @@
 import Posts from '../../components/posts/Posts';
-import parkPic from '../../nationalPark.jpg';
+import parkPic from '../../assets/nationalPark.jpg';
 import "./homepage.css";
 
 export default function Homepage() {
   return (
     <div className="homepage">
-      <div className="headliner">
-        <div className='headliner-textbox'>
+      <div className='homepage-container'>
+        <div className="headliner">
           <h3 className='headliner-text'>What's Trending Today</h3>
+          <img 
+            className='headliner-image'
+            src={parkPic}
+            alt="Headliner-image"
+          />
         </div>
-        <img 
-          className='headliner-image'
-          src={parkPic}
-          alt="Headliner-image"></img>
+        <Posts />
       </div>
-      <Posts />
     </div>
   );
 }

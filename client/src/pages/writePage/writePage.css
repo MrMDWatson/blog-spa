@@ -1,12 +1,26 @@
 .write-page {
+  width: 100%;
+  height: calc(100vh-113px);
+}
+
+.write-page-container {
   margin: 0 auto;
+  padding: 20px;
   width: 100%;
   min-width: 300px;
   max-width: 600px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.write-page-header {
+  margin-bottom: 20px;
+}
+
+.write-page-title {
+  margin: 0;
+  padding: 0;
 }
 
 .post-form {

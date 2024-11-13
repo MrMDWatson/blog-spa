@@ -22,3 +22,8 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+.post-title > h4 {
+  margin: 0;
+  padding: 0;
+}

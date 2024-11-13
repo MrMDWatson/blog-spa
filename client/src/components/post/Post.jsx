@@ -5,10 +5,10 @@ export default function Post({ title, desc, id}) {
   return (
     <div className='post'>
       <div className="post-header">
-        <div><Link className="post-title" to={"./viewPost/" + id} >{title}</Link></div>
+        <Link className="post-title" to={"./viewPost/" + id} ><h4>{title}</h4></Link>
       </div>
       <div className="post-body">
-        <div>{desc}</div>
+        <p>{desc}</p>
       </div>
     </div>
   );

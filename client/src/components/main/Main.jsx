@@ -3,8 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from '../../pages/homepage/Homepage';
 import WritePage from '../../pages/writePage/WritePage';
 import ViewPage from '../../pages/viewPage/ViewPage';
-import AboutPage from '../../pages/aboutPage/AboutPage';
-import ContactPage from '../../pages/contactPage/ContactPage';
+import Settings from '../../pages/settings/Settings';
 import "./main.css";
 
 export default function Main() {
@@ -14,8 +13,7 @@ export default function Main() {
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/write" element={<WritePage />}></Route>
         <Route path="/viewPost/:id" element={<ViewPage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/contact" element={<ContactPage />}></Route>
+        <Route path="/settings" element={<Settings />}></Route>
       </Routes>
     </main>
   );
