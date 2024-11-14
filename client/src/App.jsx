@@ -4,14 +4,14 @@ import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div id="App">
-      <Header />
-      <Main />
-      <Footer />
+      <div className='App-container'>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
     </div>
   );
 }
-
-export default App;

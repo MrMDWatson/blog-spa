@@ -1,27 +1,31 @@
 .homepage {
   padding: 0;
   margin: 0;
+  width: 100%;
+  min-height: calc(100vh - 63px);
 }
 
 .homepage-container {
-  max-width: 1000px;
+  max-width: 780px;
   padding: 20px;
   margin: 0 auto;
 }
 
 .headliner {
+  transform: initial;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;;
+  flex-direction: column;
   margin-bottom: 40px;
   min-height: 200px;
+  position: relative;
 }
 
 .headliner-text {
   position: absolute;
-  top: 120px;
+  top: 20%;
   background-color: rgb(167, 98, 98);
   border-radius: 10px;
   padding: 15px 20px;

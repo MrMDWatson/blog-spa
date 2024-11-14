@@ -6,9 +6,8 @@ header {
   border-bottom: 3px solid #f4f1f1;
   width: 100%;
   height: min-content;
-  z-index: 9999;
+  z-index: 9998;
   box-shadow: 0 0 20px black;
-
 }
 
 .navbar {
@@ -72,6 +71,7 @@ header {
   justify-self: flex-end;
   justify-content: center;
   width: 80px;
+  z-index: 9999;
 }
 
 .dropdown > a {

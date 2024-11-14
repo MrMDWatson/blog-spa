@@ -29,8 +29,8 @@ export default function WritePage() {
           <h2 className="write-page-title">Create a new post</h2>
         </div>
         <form className="post-form">
-          <div className="form-group">
-            <label for="post-title" id="post-title-label">Title</label>
+          <div className="write-form-group">
+            <label htmlFor="post-title" id="post-title-label">Title</label>
             <input
               className="postInputs"
               id="post-title"
@@ -38,11 +38,14 @@ export default function WritePage() {
               type="text"
               value={title}
               required
-              onChange={(e) => setTitle(e.target.value)}
+              onChange={(e) => {
+                setTitle(e.target.value)
+                setAttention("")
+              }}
               />
           </div>
-          <div className="form-group">
-            <label for="post-description" id="post-desc-label">Description</label>
+          <div className="write-form-group">
+            <label htmlFor="post-description" id="post-desc-label">Description</label>
             <textarea
               className="postInputs"
               id="post-description"
@@ -51,11 +54,14 @@ export default function WritePage() {
               rows={10}
               value={description}
               required
-              onChange={(e) => setDescription(e.target.value)}
+              onChange={(e) => {
+                setDescription(e.target.value)
+                setAttention("")
+              }}
               />
           </div>
-          <div className="form-group">
-            <div className="attention">{attention}</div>
+          <div className="write-form-group">
+            <div className="post-attention">{attention}</div>
             <button id="post-submit" onClick={(e) => handleSubmit(e)}>Submit</button>
           </div>
         </form>

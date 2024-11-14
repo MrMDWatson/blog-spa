@@ -18,7 +18,7 @@ export default function Header() {
             </li>
           </div>
           <div className="nav-list-right">
-            {!user
+            {user
               ? (
                 <li className="nav-list-item dropdown">
                   <Link to="/settings">
@@ -41,10 +41,10 @@ export default function Header() {
               : (
                 <>
                   <li className="nav-list-item">
-                    <Link className="nav-link" to="/write">Sign Up</Link>
+                    <Link className="nav-link" to="/signup">Sign Up</Link>
                   </li>
                   <li className="nav-list-item">
-                    <Link className="nav-link" to="/write">Login</Link>
+                    <Link className="nav-link" to="/login">Login</Link>
                   </li>
                 </>
               )
