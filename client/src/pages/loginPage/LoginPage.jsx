@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { setUser } from "../../app/appSplice";
+import axios from "axios";
 import "./loginPage.css";
 
 export default function LoginPage() {
@@ -9,16 +10,36 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [attention, setAttention] = useState("");
 
-  const navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email === "" || password === "") {
       setAttention("Missing field");
       return;
     }
-    
-    navigate("/");
+    /*
+    axios({
+      method: "post",
+      url: "/login",
+      data: {
+        email,
+        password
+      },
+    })
+      .then((result) => {
+        if (result.data.username) {
+          console.log("Logging in");
+        } else {
+          setAttention("Incorrect password");
+        }
+        dispatch(setUser(result.data.username))
+      })
+      .catch((error) => {
+        error = new Error();
+        dispatch(setUser(null));
+        setAttention("Error logging in");
+      });
+      */
+    dispatch(setUser("Matthew"));
   }
 
   return (

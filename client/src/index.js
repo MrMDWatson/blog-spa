@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
@@ -8,13 +9,16 @@ import './index.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+const helmetContext = {};
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter basename="/">
-        <App />
-      </BrowserRouter>
-    </Provider>
+    <HelmetProvider context={helmetContext}>
+      <Provider store={store}>
+        <BrowserRouter basename="/">
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </HelmetProvider>
   </React.StrictMode>
 );

@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { createPost } from "../../features/posts/postsSlice";
+import { createPost } from "../../../features/posts/postsSlice";
+import SEO from "../../../components/seo/SEO";
 import "./writePage.css";
 
 export default function WritePage() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [attention, setAttention] = useState("");
 
-  const navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title === "" || description === "") {
       setAttention("Missing field");
+      return;
+    }
+    if (title) {
+      window.location.href = "/login";
       return;
     }
     dispatch(createPost({title: title, desc: description}));
@@ -24,6 +28,10 @@ export default function WritePage() {
 
   return (
     <div className="write-page">
+      <SEO
+        title="Create a post"
+        description="Create a new post for your blog"
+      />
       <div className="write-page-container">
         <div className="write-page-header">
           <h2 className="write-page-title">Create a new post</h2>
@@ -42,7 +50,7 @@ export default function WritePage() {
                 setTitle(e.target.value)
                 setAttention("")
               }}
-              />
+            />
           </div>
           <div className="write-form-group">
             <label htmlFor="post-description" id="post-desc-label">Description</label>
@@ -58,7 +66,7 @@ export default function WritePage() {
                 setDescription(e.target.value)
                 setAttention("")
               }}
-              />
+            />
           </div>
           <div className="write-form-group">
             <div className="post-attention">{attention}</div>
